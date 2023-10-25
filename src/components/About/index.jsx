@@ -1,6 +1,6 @@
-import { AiFillLinkedin, AiOutlineMail } from "react-icons/Ai";
-import { BsWhatsapp } from "react-icons/Bs";
-import { BiLogoGit } from "react-icons/Bi";
+import { AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
+import { BsWhatsapp } from "react-icons/bs";
+import { BiLogoGit } from "react-icons/bi";
 import style from "./style.module.scss";
 
 export const AboutSection = () => {

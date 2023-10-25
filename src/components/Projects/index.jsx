@@ -1,5 +1,5 @@
-import { BiLogoSass, BiLogoJavascript, BiLogoReact, BiLogoHtml5, BiLogoCss3, BiLogoGit } from "react-icons/Bi";
-import { CgWebsite } from "react-icons/Cg";
+import { BiLogoSass, BiLogoJavascript, BiLogoReact, BiLogoHtml5, BiLogoCss3, BiLogoGit } from "react-icons/bi";
+import { CgWebsite } from "react-icons/cg";
 import style from "./style.module.scss";
 
 export const Projects = () => {

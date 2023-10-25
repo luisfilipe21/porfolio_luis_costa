@@ -1,4 +1,4 @@
-import { BiLogoSass, BiLogoJavascript, BiLogoReact, BiLogoGit, BiLogoGithub, BiLogoHtml5, BiLogoCss3, BiLogoTailwindCss } from "react-icons/Bi";
+import { BiLogoSass, BiLogoJavascript, BiLogoReact, BiLogoGit, BiLogoGithub, BiLogoHtml5, BiLogoCss3, BiLogoTailwindCss } from "react-icons/bi";
 import style from "./style.module.scss";
 
 
