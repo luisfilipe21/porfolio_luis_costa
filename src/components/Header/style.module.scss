@@ -1,0 +1,19 @@
+.container {
+    box-shadow: 2px 7px 10px -9px var(--orange);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+
+    .divList {
+        max-width: 250px;
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

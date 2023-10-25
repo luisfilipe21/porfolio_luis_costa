@@ -1,0 +1,166 @@
+.bigBox {
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    background-color: var(--black);
+    margin-bottom: 2rem ;
+
+    .info {
+        line-height: 12px;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 0 6rem;
+
+        p {
+            max-width: 1.125rem;
+        }
+
+        h2 {
+            margin-top: 16px;
+        }
+    }
+
+    .boxProjects {
+        width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        ul {
+            .project li {
+                padding: 2rem 0;
+                width: 450px;
+                height: 280px;
+                position: relative;
+                margin: 40px 0;
+
+                .card {
+                    height: 100%;
+                    width: 100%;
+
+                    position: absolute;
+                    transform-style: preserve-3d;
+                    transition: all .5s ease;
+
+                    .projectImg {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+
+                        position: absolute;
+                        width: 102%;
+                        height: 94%;
+                        backface-visibility: hidden;
+
+                        padding: 1rem 0;
+                        border: 5px solid var(--orange);
+                        box-sizing: border-box;
+                        box-shadow: rgba(249, 88, 66, 0.25) 0px 50px 100px -20px, rgba(249, 88, 66, 0.3) 0px 30px 60px -30px, rgba(249, 88, 66, 0.35) 0px -2px 6px 0px inset;
+
+                        box-sizing: border-box;
+                        border-radius: 20px;
+
+                        img {
+                            border-radius: 18px;
+                        }
+
+                        .logos {
+                            position: absolute;
+                            display: flex;
+                            justify-content: space-between;
+
+                            color: var(--white);
+                            top: 10px;
+                            right: 10px;
+                        }
+
+                        @media(min-width: 768px) {
+
+                            width: 102%;
+                            height: 99.5%;
+                        }
+                    }
+
+                    .projectInfo {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        backface-visibility: hidden;
+                        transform: rotateY(180deg);
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        padding: 1rem 2.5rem 0 1rem;
+
+                        border: 5px solid var(--orange);
+                        box-sizing: border-box;
+                        box-shadow: rgba(249, 88, 66, 0.25) 0px 50px 100px -20px, rgba(249, 88, 66, 0.3) 0px 30px 60px -30px, rgba(249, 88, 66, 0.35) 0px -2px 6px 0px inset;
+
+                        border-radius: 10px;
+
+                        h3 {
+                            margin-bottom: 2rem;
+                        }
+
+                        p {
+                            line-height: 24px;
+                            margin-bottom: 0.5rem;
+                        }
+
+                        .links {
+                            padding-bottom: 5px;
+
+                            a {
+                                color: var(--white);
+                                text-decoration: none;
+                                margin: 1.25rem;
+
+                                &:hover {
+                                    color: var(--orange);
+                                    transition: 1s;
+                                }
+                            }
+                        }
+                    }
+
+
+                    @media (min-width: 768px) {
+                        width: 480px;
+                    }
+
+                    &:hover {
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+        }
+
+        @media(min-width:768px) {
+            max-width: 1200px;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 1.875rem;
+
+                .project li {
+                    margin-bottom: 0;
+                }
+            }
+
+
+        }
+    }
+
+}

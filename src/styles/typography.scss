@@ -1,0 +1,33 @@
+.title-1{
+    font-size: var(--size-1);
+    color: var(--white);
+}
+
+.title-2{
+    font-size: var(--size-2);
+    color: var(--white);
+}
+
+.title-3{
+    font-size: var(--size-3);
+    color: var(--white);
+}
+
+.paragraph{
+    font-size: var(--size-4);
+    color: var(--white);
+}
+
+.specialText{
+    color: var(--orange);
+    font-size: var(--size-4);
+    text-transform: uppercase;
+
+    border-bottom: 2px solid var(--orange);
+    width: 15%;
+    padding-bottom: 5px;
+}
+
+.logos{
+    color: var(--white);
+}
