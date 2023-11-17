@@ -8,9 +8,9 @@ export const Header = () => {
                 <div className={style.divList}>
                     <nav>
                         <ul>
-                            <li className="paragraph">About me</li>
-                            <li className="paragraph">Projects</li>
-                            <li className="paragraph">Contat</li>
+                            <li><a className="paragraph" href="#projects">Projects</a></li>
+                            <li><a className="paragraph" href="#techs">Techs</a></li>
+                            <li><a className="paragraph" href="#contacts">Contact</a></li>
                         </ul>
                     </nav>
                 </div>

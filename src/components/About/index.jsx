@@ -1,11 +1,12 @@
 import { AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
-import { BiLogoGit } from "react-icons/bi";
+import { BiLogoGithub } from "react-icons/bi";
 import style from "./style.module.scss";
+import Foto from "../../assets/eu.jpg";
 
 export const AboutSection = () => {
     return (
-        <section className="container">
+        <section className="container" id="about">
             <div className={style.box}>
                 <div className={style.boxInfo}>
                     <div className={style.boxLinks}>
@@ -16,20 +17,19 @@ export const AboutSection = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="luisfilipegc@hotmail.com" title="luisfilipegc@hotmail.com">
+                                <a href="mailto: luisfilipegc@hotmail.com" target="_blank" title="luisfilipegc@hotmail.com">
                                     {<AiOutlineMail size={20} />}
                                 </a>
                             </li>
                             <li>
-                                <a href="" alt="+55 (61) 98207-2433" title="+55 (61) 98207-2433">
-
+                            <a href="https://wa.me/5561982072433" target="_blank">
                                     {<BsWhatsapp size={20} />}
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/luisfilipe21" target="_blank">
 
-                                    {<BiLogoGit size={20} />}
+                                    {<BiLogoGithub size={20} />}
                                 </a>
                             </li>
                         </ul>
@@ -40,7 +40,7 @@ export const AboutSection = () => {
                 </div>
 
                 <div className={style.img}>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pCsO9a48vB15ItHsErQ51-ZDhDs0FFFYDknQeZkM8STf92m0gbDffWt8VUdtdZdlUtM&usqp=CAU" alt="Img"></img>
+                    <img src={Foto} alt="Img"></img>
                 </div>
             </div>
         </section>

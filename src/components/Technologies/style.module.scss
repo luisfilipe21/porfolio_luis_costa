@@ -1,10 +1,9 @@
 .info {
-    background-color: var(--black);
-    height: 35vh;
-
+    width: 100%;
     max-width: 767px;
     padding: 1rem 0;
-    width: 100%;
+
+    background-color: var(--black);
 
     display: flex;
     flex-direction: column;
@@ -15,64 +14,90 @@
         h2 {
             margin: 1rem 0;
         }
-        .line{    
+
+        .line {
             max-width: 7rem;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            
+
         }
 
         .infoText {
             max-width: 550px;
             line-height: 24px;
         }
+
+
     }
 
     .techs {
         color: var(--white);
-        padding: 1rem 0;
-        max-width: 550px;
+        padding: 1rem 2rem;
+        width: 90%;
 
         ul {
             display: flex;
             flex-direction: row;
             overflow-x: scroll;
 
-            li{
-                margin:  1rem;
+            li {
+                margin: 1rem;
+                height: auto;
+
+
+                p {
+                    color: transparent;
+                    padding: 8px;
+                    transition: 0.5s;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
 
-            li:hover{
+            li:hover {
                 color: var(--orange);
                 transition: 0.5s;
+
+                p {
+                    color: var(--orange);
+                    transition: 0.5s;
+                }
+            }
+        }
+
+        @media(min-width:895px) {
+            ul {
+                overflow: hidden;
             }
         }
     }
 
+    @media(min-width:895px) {
 
-    @media(min-width: 878px) {
-        width: 100%;
-        max-width: 1200px;
-        
         .infoBox {
-            width: 83%;
+            width: 100%;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            // margin: 0 0 0 12rem;
+            justify-content: space-around;
+            gap: 60px;
 
-            .line{
+            .line {
                 height: 100%;
             }
         }
+    }
+
+    @media(min-width: 678px) {
+        width: 100%;
+        max-width: 1200px;
+        gap: 2rem;
 
         .techs {
-            max-width: 1200px;
- 
             ul {
                 width: 100%;
-                overflow-x:hidden;
             }
         }
 

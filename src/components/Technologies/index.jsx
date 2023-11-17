@@ -4,12 +4,11 @@ import style from "./style.module.scss";
 
 export const Technologies = () => {
     return (
-
-        <section className="container">
+        <section className="container" id="techs">
             <div className={style.info}>
                 <div className={style.infoBox}>
                     <div className={style.line}>
-                        <p className="specialText">tech</p>
+                        <p className="specialText">techs</p>
                         <h2 className="title-2">Technologies</h2>
                     </div>
                     <div className={style.infoText}>
@@ -19,19 +18,41 @@ export const Technologies = () => {
 
                 <div className={style.techs}>
                     <ul>
-                        <li ><BiLogoHtml5 size={80} title="HTML"/> </li>
-                        <li ><BiLogoCss3 size={80} title="CSS"/> </li>
-                        <li ><BiLogoJavascript size={80} title="Javascript"/></li>
-                        <li ><BiLogoReact size={80} title="ReactJs"/> </li>
-                        <li ><BiLogoSass size={80} title="SASS"/> </li>
-                        <li ><BiLogoTailwindCss size={80} title="Tailwind"/></li>
-                        <li ><BiLogoGit size={80} title="Git"/> </li>
-                        <li ><BiLogoGithub size={80} title="GitHub"/> </li>
+                        <li >
+                            <BiLogoHtml5 size={80} title="HTML" />
+                            <p className="paragraph">HTML</p>
+                        </li>
+                        <li >
+                            <BiLogoCss3 size={80} title="CSS" />
+                            <p className="paragraph">CSS</p>
+                        </li>
+                        <li >
+                            <BiLogoJavascript size={80} title="Javascript" />
+                            <p className="paragraph">Javascript</p>
+                        </li>
+                        <li >
+                            <BiLogoReact size={80} title="ReactJs" />
+                            <p className="paragraph">ReactJs</p>
+                        </li>
+                        <li >
+                            <BiLogoSass size={80} title="SASS" />
+                            <p className="paragraph">SASS</p>
+                        </li>
+                        <li >
+                            <BiLogoTailwindCss size={80} title="Tailwind" />
+                            <p className="paragraph">Tailwind</p>
+                        </li>
+                        <li >
+                            <BiLogoGit size={80} title="Git" />
+                            <p className="paragraph">Git</p>
+                        </li>
+                        <li >
+                            <BiLogoGithub size={80} title="GitHub" />
+                            <p className="paragraph">GitHub</p>
+                        </li>
                     </ul>
                 </div>
             </div>
-
         </section>
-
     )
 }
