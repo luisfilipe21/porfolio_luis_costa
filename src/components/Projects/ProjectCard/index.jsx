@@ -38,7 +38,6 @@ export const ProjectCard = ({ name, description, site, img, technologies }) => {
                     <p className="paragraph">{description}</p>
                     <div className={style.links}>
                         <a href={site} target="_blank"><CgWebsite size={50} /></a>
-                        <a href="" target="_blank"><BiLogoGit size={50} /></a>
                     </div>
                 </div>
             </div>

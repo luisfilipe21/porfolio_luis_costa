@@ -4,10 +4,14 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 1rem;
-
+    padding: 1rem 0;
     position: sticky;
     top: 10px;
+    gap: 1rem;
+    
+    @media (min-width: 768px) {
+        gap: 25rem;
+    }
 
     .divList {
         max-width: 250px;
@@ -35,4 +39,6 @@
         }
 
     }
+
+
 }
